@@ -1,1 +1,478 @@
 // HOME PAGE
+@keyframes fade {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(-60%);
+  }
+}
+// intro start
+.intro {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+  }
+  &-content {
+    padding: 120px 0;
+    max-width: 845px;
+    width: 100%;
+    background: url(../../images/intro-bg-gradient.png) no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    &__title {
+      font-size: 60px;
+      font-weight: bold;
+    }
+    &__desc {
+      font-size: 24px;
+      margin: 81px 0 90px 0;
+      max-width: 420px;
+    }
+    .btn-primary {
+      height: 50px;
+      border-radius: 25px;
+    }
+  }
+  &-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -84px;
+    z-index: -1;
+    animation: fade 3s ease-in-out infinite alternate;
+  }
+}
+// intro end
+
+// about us start
+.about-us {
+  background: #fff;
+  padding: 77px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  &__img {
+    margin-right: 34px;
+    transform: translateX(-30px);
+  }
+  &__coins-img {
+    transform: translateX(30px);
+  }
+  &__content {
+    max-width: 555px;
+    width: 100%;
+    .title {
+      margin-bottom: 50px;
+    }
+  }
+}
+// about us end
+
+// our-advantages start
+.our-advantages {
+  padding: 100px 0 110px 0;
+
+  &__cards {
+    margin-top: 90px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 130px;
+      left: -67px;
+      background: #c7d3ff;
+      filter: blur(29px);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      z-index: -1;
+      animation: fade 0.7 ease-in-out infinite alternate;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 130px;
+      right: -67px;
+      background: #ffd81f8f;
+      filter: blur(29px);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      z-index: -1;
+      animation: fade 0.7s ease-in-out infinite alternate;
+    }
+  }
+  &__card {
+    text-align: center;
+    padding: 50px 36px 56px 36px;
+    border-radius: 12px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+      margin: 0 auto 50px auto;
+    }
+    & > div {
+      min-height: 235px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p {
+        min-height: 90px;
+      }
+    }
+    &-title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+}
+// our-advantages end
+
+// Calculate income start
+.calculate-income {
+  padding: 98px 0 124px 0;
+  background: #fff;
+  .title-info {
+    margin: 37px 0 60px 0;
+    font-size: 20px;
+    color: #77767a;
+  }
+  &__boxes {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+
+    .calculate-box {
+      border: 1px solid #023bff;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      max-width: 585px;
+      width: 100%;
+      gap: 18px;
+      align-items: stretch;
+      .left-box {
+        max-width: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+      }
+      .right-box {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+      }
+      .card {
+        width: 100%;
+        padding: 14px 20px;
+        background: #fff;
+        box-shadow: 3px 5px 14px rgb(0 0 0 / 7%);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        span {
+          color: #c1c3d2;
+          font-size: 14px;
+          font-weight: 300;
+        }
+        h4 {
+          font-size: 18px;
+          font-weight: 600;
+          color: #110a28;
+          margin-top: 6px;
+        }
+      }
+      .statistiks-img {
+        width: 100%;
+        height: 115px;
+      }
+      .dedline-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        h5 {
+          font-size: 16px;
+          font-weight: 400;
+        }
+        .dedline-count {
+          color: #c1c3d2;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  /* Range slider styling */
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 20px;
+  }
+  input[type='range'] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    box-shadow: 3px 5px 14px 4px rgba(0, 0, 0, 0.07);
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #053dfd;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
+  }
+  .slider-container {
+    z-index: 1;
+  }
+
+  input[type='range']::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #053dfd;
+    cursor: pointer;
+  }
+  /* Track for the range slider */
+  .track {
+    position: absolute;
+    top: 8px;
+    height: 10px;
+    background-color: #053dfd;
+    border-radius: 5px;
+  }
+  &__right-box {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 14px rgb(0 0 0 / 7%);
+    background: #fff;
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .desc {
+      margin-top: 30px;
+      max-width: 520px;
+    }
+  }
+}
+// Calculate income end
+
+// reviews
+.reviews {
+  padding: 98px 0 100px 0;
+  &-title__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 83px;
+  }
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(227px, 1fr));
+    gap: 30px;
+  }
+  &-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .user-box {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      .user-icon {
+        width: 40px;
+        height: 40px;
+        background: #023bff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+      }
+      .user-name {
+        font-weight: 20px;
+        font-weight: 500;
+      }
+    }
+    .desc {
+      padding: 30px 0 34px 0;
+    }
+  }
+  &-date {
+    font-size: 14px;
+    color: #a3a3a4;
+  }
+}
+// reviews end
+
+// faq start
+.faq {
+  padding: 100px 0 97px 0;
+  background: #fff;
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 93px;
+  }
+  &-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  &-img {
+    max-width: 430px;
+    width: 100%;
+    height: 430px;
+  }
+  .accordions {
+    max-width: 690px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .accordion {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 3px 5px 14px rgb(0 0 0 / 7%);
+
+      &-icon {
+        transition: all 0.2s ease-in-out;
+      }
+
+      &-header {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & > div {
+          display: flex;
+          gap: 22px;
+          align-items: center;
+          .question-icon {
+            background: #023bff;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+          }
+        }
+
+        &.active {
+          .accordion-icon {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      &-title {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      &-body {
+        padding-top: 17px;
+        border-top: 1px solid #f3f3f6;
+        margin-top: 20px;
+        display: none;
+        flex-direction: column;
+        gap: 30px;
+
+        &.active {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+// faq end
+
+// news start
+.news {
+  padding: 100px 0;
+
+  &-title__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    .all-news {
+      color: #023bff;
+      font-size: 18px;
+    }
+  }
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+  }
+  &-card {
+    background: #fff;
+    box-shadow: 3px 5px 14px rgb(0 0 0 / 7%);
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+      border-radius: 12px;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .news-title {
+      margin: 34px 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .read-more__btn {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #023bff;
+      color: #fff;
+      border-radius: 8px;
+    }
+  }
+}
+// news end

@@ -19,26 +19,504 @@
 
     <!-- header -->
     <header class="header">
-
+      <div class="container">
+        <a class="header-logo" href="#!">
+          <img src="images/icons/logo.png" alt="logo">
+          <span class="header-logo__name">CryptoNest</span>
+        </a>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#!">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Staking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Lending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="btn-primary" href="#!">Connect wallet</a>
+      </div>
     </header>
 
     <!-- main -->
     <main class="main">
+
+      <!-- intro start -->
+      <section class="intro">
+        <div class="container">
+          <div class="intro-content">
+            <h1 class="intro-content__title">Maximize your
+              cryptocurrency investments
+              with CryptoNest!</h1>
+            <p class="intro-content__desc">
+              Join the community and start earning
+              with POS projects.
+            </p>
+            <a class="btn-primary" href="#!">
+              Start earning →
+            </a>
+          </div>
+          <div class="intro-image">
+            <img src="images/intro-wallet-img.png" alt="intro-wallet-img">
+          </div>
+        </div>
+      </section>
+      <!-- intro end -->
+
+      <!-- about us start -->
+      <section class="about-us">
+        <div class="container">
+          <img class="about-us__img" src="images/about-us-img.png" alt="about-us-img">
+          <div class="about-us__content">
+            <h2 class="title">About us</h2>
+            <p class="desc">
+              CryptoNest is a decentralized autonomous
+              organization (DAO) that provides users with
+              he opportunity for secure staking and lending
+              of cryptocurrencies to earn on POS projects.
+            </p>
+          </div>
+          <img class="about-us__coins-img" src="images/coins.png" alt="coins">
+        </div>
+      </section>
+      <!-- about us end -->
+
+      <!-- Our advantages start -->
+      <section class="our-advantages">
+        <div class="container">
+          <h2 class="title">Our advantages</h2>
+
+          <div class="our-advantages__cards">
+            <div class="our-advantages__card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+              <img src="images/security.png" alt="security" width="170" height="170">
+              <div>
+                <h3 class="our-advantages__card-title">Security <br>
+                  and transparency <br>
+                  of transactions</h3>
+                <p class="desc">
+                  All transactions are recorded
+                  on a public platform
+                  that is protected from
+                  unauthorized access.
+                </p>
+              </div>
+            </div>
+            <div class="our-advantages__card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+              <img src="images/up-finance.png" alt="up-finance" width="137" height="153">
+              <div>
+                <h3 class="our-advantages__card-title">High yield <br>
+                  through staking <br>
+                  and lending</h3>
+                <p class="desc">
+                  One of the popular ways
+                  to earn passive income
+                  in the ecosystem
+                </p>
+              </div>
+            </div>
+            <div class="our-advantages__card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+              <img src="images/convertation.png" alt="convertation" width="167" height="167">
+              <div>
+                <h3 class="our-advantages__card-title">Convenience and support
+                  for multiple blockchains
+                  in one place</h3>
+                <p class="desc">
+                  A new and innovative way
+                  to interact with multiple
+                  blockchains at once
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our advantages end -->
+
+      <!-- Calculate income start -->
+      <section class="calculate-income">
+        <div class="container">
+          <h2 class="title">Calculate income</h2>
+          <p class="title-info">
+            Contribute to the security of the network and earn rewards.
+          </p>
+          <div class="calculate-income__boxes">
+            <div class="calculate-box">
+              <div class="left-box">
+                <div class="card">
+                  <div>
+                    <span>Cryptocurrency</span>
+                    <h4>Solana</h4>
+                  </div>
+                  <img src="images/icons/arrow-down.png" alt="arrow-down">
+                </div>
+                <img class="statistiks-img" src="images/statistiks.png" alt="">
+              </div>
+              <div class="right-box">
+                <div class="card">
+                  <div>
+                    <span>Enter the amount</span>
+                    <h4>10.000 $</h4>
+                  </div>
+                </div>
+                <div class="dedline-box">
+                  <h5>Investment term</h5>
+                  <span class="dedline-count">1 year</span>
+                </div>
+                <div class="slider-container">
+                  <input type="range" id="slider" min="0" max="1000" value="693">
+                  <div class="track" id="track"></div>
+                </div>
+                <div class="card">
+                  <div>
+                    <span>Income after 1 year</span>
+                    <h4 style="display: flex; gap: 4px;">
+                      <div id="income">693.23</div> $
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculate-income__right-box">
+              <h3>What is Solana Staking?</h3>
+              <p class="desc">
+                Solana Staking involves delegating SOL tokens to a chosen validator while maintaining full control over
+                your keys.
+              </p>
+              <p class="desc">
+                Validators use these tokens as collateral to secure and validate the Solana blockchain, distributing
+                rewards to you every epoch (about 2 days). The current staking reward rate on Solana is 6.93%.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- Calculate income end -->
+
+      <!-- reviews start -->
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews-title__box">
+            <h2 class="title">Over 6,480 reviews</h2>
+            <img src="images/truspilto.png" alt="truspilto">
+          </div>
+
+          <div class="reviews-cards">
+            <div class="reviews-card">
+              <div class="reviews-card__header">
+                <div class="user-box">
+                  <div class="user-icon">
+                    <img src="images/icons/user-icon.png" alt="user-icon">
+                  </div>
+                  <h4 class="user-name">Olegan</h4>
+                </div>
+                <img src="images/icons/like.png" alt="like">
+              </div>
+              <p class="desc">
+                I always earn on crypto
+                — the best, you won't
+                find faster.
+              </p>
+              <span class="reviews-date">18.08.2024</span>
+            </div>
+            <div class="reviews-card">
+              <div class="reviews-card__header">
+                <div class="user-box">
+                  <div class="user-icon">
+                    <img src="images/icons/user-icon.png" alt="user-icon">
+                  </div>
+                  <h4 class="user-name">Olegan</h4>
+                </div>
+                <img src="images/icons/like.png" alt="like">
+              </div>
+              <p class="desc">
+                I always earn on crypto
+                — the best, you won't
+                find faster.
+              </p>
+              <span class="reviews-date">18.08.2024</span>
+            </div>
+            <div class="reviews-card">
+              <div class="reviews-card__header">
+                <div class="user-box">
+                  <div class="user-icon">
+                    <img src="images/icons/user-icon.png" alt="user-icon">
+                  </div>
+                  <h4 class="user-name">Olegan</h4>
+                </div>
+                <img src="images/icons/like.png" alt="like">
+              </div>
+              <p class="desc">
+                I always earn on crypto
+                — the best, you won't
+                find faster.
+              </p>
+              <span class="reviews-date">18.08.2024</span>
+            </div>
+            <div class="reviews-card">
+              <div class="reviews-card__header">
+                <div class="user-box">
+                  <div class="user-icon">
+                    <img src="images/icons/user-icon.png" alt="user-icon">
+                  </div>
+                  <h4 class="user-name">Olegan</h4>
+                </div>
+                <img src="images/icons/like.png" alt="like">
+              </div>
+              <p class="desc">
+                I always earn on crypto
+                — the best, you won't
+                find faster.
+              </p>
+              <span class="reviews-date">18.08.2024</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- reviews end -->
+
+      <!-- faq start -->
+      <section class="faq">
+        <div class="container">
+          <h2 class="title">faq</h2>
+
+          <div class="faq-boxes">
+            <img class="faq-img" src="images/faq.png" alt="faq">
+
+            <div class="accordions">
+              <div class="accordion">
+                <div class="accordion-header">
+                  <div>
+                    <div class="question-icon">
+                      <img src="images/icons/question.png" alt="question">
+                    </div>
+                    <h3 class="accordion-title">
+                      How staking and lending work
+                    </h3>
+                  </div>
+                  <img class="accordion-icon" src="images/icons/accordion-arrow.png" alt="accordion-icon">
+                </div>
+                <div class="accordion-body">
+                  <p class="desc">
+                    Staking is the process of providing your crypto assets as collateral
+                    for blockchain networks that use the PoS consensus algorithm.
+                  </p>
+                  <p class="desc">
+                    Users receive rewards for this.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion-header">
+                  <div>
+                    <div class="question-icon">
+                      <img src="images/icons/question.png" alt="question">
+                    </div>
+                    <h3 class="accordion-title">
+                      How fast is the payout?
+                    </h3>
+                  </div>
+                  <img class="accordion-icon" src="images/icons/accordion-arrow.png" alt="accordion-icon">
+                </div>
+                <div class="accordion-body">
+                  <p class="desc">
+                    Staking is the process of providing your crypto assets as collateral
+                    for blockchain networks that use the PoS consensus algorithm.
+                  </p>
+                  <p class="desc">
+                    Users receive rewards for this.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion-header">
+                  <div>
+                    <div class="question-icon">
+                      <img src="images/icons/question.png" alt="question">
+                    </div>
+                    <h3 class="accordion-title">
+                      How to complete verification on the site?
+                    </h3>
+                  </div>
+                  <img class="accordion-icon" src="images/icons/accordion-arrow.png" alt="accordion-icon">
+                </div>
+                <div class="accordion-body">
+                  <p class="desc">
+                    Staking is the process of providing your crypto assets as collateral
+                    for blockchain networks that use the PoS consensus algorithm.
+                  </p>
+                  <p class="desc">
+                    Users receive rewards for this.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion-header">
+                  <div>
+                    <div class="question-icon">
+                      <img src="images/icons/question.png" alt="question">
+                    </div>
+                    <h3 class="accordion-title">
+                      Do you have a referral system?
+                    </h3>
+                  </div>
+                  <img class="accordion-icon" src="images/icons/accordion-arrow.png" alt="accordion-icon">
+                </div>
+                <div class="accordion-body">
+                  <p class="desc">
+                    Staking is the process of providing your crypto assets as collateral
+                    for blockchain networks that use the PoS consensus algorithm.
+                  </p>
+                  <p class="desc">
+                    Users receive rewards for this.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion-header">
+                  <div>
+                    <div class="question-icon">
+                      <img src="images/icons/question.png" alt="question">
+                    </div>
+                    <h3 class="accordion-title">
+                      I was blocked on the site
+                    </h3>
+                  </div>
+                  <img class="accordion-icon" src="images/icons/accordion-arrow.png" alt="accordion-icon">
+                </div>
+                <div class="accordion-body">
+                  <p class="desc">
+                    Staking is the process of providing your crypto assets as collateral
+                    for blockchain networks that use the PoS consensus algorithm.
+                  </p>
+                  <p class="desc">
+                    Users receive rewards for this.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- faq end -->
+
+
+      <!-- news start -->
+      <section class="news">
+        <div class="container">
+          <div class="news-title__box">
+            <h2 class="title">News</h2>
+            <a class="all-news" href="news.html">All news</a>
+          </div>
+          <div class="news-cards">
+            <div class="news-card">
+              <div>
+                <img src="images/news-1.png" alt="news img">
+                <h5 class="news-title">The market capitalization of the
+                  stablecoin USDT has surpassed
+                  $115 billion.</h5>
+              </div>
+              <a class="read-more__btn" href="#!">
+                &#8594;
+              </a>
+            </div>
+            <div class="news-card">
+              <div>
+                <img src="images/news-2.png" alt="news img">
+                <h5 class="news-title">Ripple's victory in court could
+                  lead to explosive growth for the
+                  XRP token.</h5>
+              </div>
+              <a class="read-more__btn" href="#!">
+                &#8594;
+              </a>
+            </div>
+            <div class="news-card">
+              <div>
+                <img src="images/news-3.png" alt="news img">
+                <h5 class="news-title">Franklin Templeton is preparing
+                  an indexed cryptocurrency ETF.</h5>
+              </div>
+              <a class="read-more__btn" href="#!">
+                &#8594;
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- news end -->
 
     </main>
 
 
     <!-- footer -->
     <footer class="footer">
-
+      <div class="container">
+        <div class="footer-left">
+          <div>
+            <h4>CryptoNest, 2024.</h4>
+            <span class="footer-text">All rights reserved</span>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a class="footer-text" href="mailto:info@cryptonest.ru">
+                  <img src="images/icons/at-icon.png" alt="at icon">
+                  <span>info@cryptonest.ru</span>
+                </a>
+              </li>
+              <li>
+                <a class="footer-text" href="mailto:info@cryptonest.ru">
+                  <img src="images/icons/location-icon.png" alt="location icon">
+                  <span>Moscow, st. Marshal, 10, building 2</span>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#!">User agreement</a>
+              </li>
+              <li>
+                <a href="#!">Terms of service</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-right">
+          <a href="#!">
+            <img src="images/icons/vk-icon.png" alt="vk-icon">
+          </a>
+          <a href="#!">
+            <img src="images/icons/facebook-icon.png" alt="facebook-icon">
+          </a>
+          <a href="#!">
+            <img src="images/icons/twitter-icon.png" alt="twitter-icon">
+          </a>
+          <a href="#!">
+            <img src="images/icons/instagram-icon.png" alt="instagram-icon">
+          </a>
+        </div>
+      </div>
     </footer>
 
   </div>
 
-  <!-- swiper js -->
-  <script src="./libs/swiper/swiper.min.js"></script>
+  <!-- vanilla-tilt js -->
+  <script src="./js/vanilla-tilt.js"></script>
   <!-- custom js -->
-  <script src="./libs/swiper/swiper.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

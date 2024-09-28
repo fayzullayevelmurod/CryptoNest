@@ -1,0 +1,48 @@
+.footer {
+  padding: 40px 0 43px 0;
+  background: #fff;
+  color: #110a28;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: #110a28;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &-left {
+    display: flex;
+    align-items: stretch;
+    gap: 127px;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+  nav {
+    display: flex;
+    gap: 75px;
+  }
+  &-right {
+    display: flex;
+    gap: 12px;
+  }
+}
