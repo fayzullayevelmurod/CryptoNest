@@ -1,5 +1,15 @@
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
+
+  // media header
+  const hamburgerBtn = document.querySelector('.hamburger-btn');
+  const nav = document.querySelector('.header nav');
+
+  hamburgerBtn.addEventListener('click', () => {
+    nav.classList.toggle('show');
+    hamburgerBtn.classList.toggle('active');
+  });
+
   const slider = document.getElementById("slider");
   if (slider) {
     const incomeDisplay = document.getElementById("income");

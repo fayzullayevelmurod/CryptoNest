@@ -33,5 +33,36 @@
       }
     }
   }
+  .media-show {
+    display: none;
+  }
+  .hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    span {
+      width: 30px;
+      height: 2px;
+      background: #110a28;
+      position: relative;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &.active {
+      span {
+        &:first-child {
+          transform: rotate(45deg);
+          top: 7px;
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          transform: rotate(-45deg);
+          top: -7px;
+        }
+      }
+    }
+  }
 }
 // header end

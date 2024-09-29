@@ -1,15 +1,228 @@
-@mixin respond-to($breakpoint) {
-  @if $breakpoint == mobile {
-    @media screen and (max-width: 767px) {
-      @content;
+@media screen and (max-width: 1250px) {
+  .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 20px 0;
+    .btn-primary {
+      display: none;
+      &.media-show {
+        display: flex;
+      }
     }
-  } @else if $breakpoint == tablet {
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      @content;
+    nav {
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      height: 100%;
+      z-index: 999;
+      background: #f6f7ff;
+      width: 100%;
+      padding: 30px;
+      transition: all 0.2s ease-in-out;
+      &.show {
+        left: 0;
+      }
+      ul {
+        flex-direction: column;
+      }
     }
-  } @else if $breakpoint == desktop {
-    @media screen and (min-width: 1025px) {
-      @content;
+  }
+  .intro-image {
+    position: unset;
+    transform: none;
+    animation-name: media-fade;
+  }
+  .intro .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .intro-content__desc {
+    margin: 30px auto;
+  }
+  .intro-content .btn-primary {
+    margin: 0 auto;
+  }
+  .intro-content {
+    max-width: 100%;
+  }
+  .intro-content__title {
+    font-size: 50px;
+  }
+  @keyframes media-fade {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+  .about-us .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .about-us__img,
+  .about-us__coins-img {
+    transform: none;
+    margin: 0;
+  }
+  .calculate-income__boxes {
+    flex-direction: column;
+  }
+  .calculate-income__boxes .calculate-box {
+    max-width: 100%;
+  }
+  .reviews-title__box {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .faq-boxes {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .faq-img {
+    margin: 0 auto;
+    object-fit: contain;
+  }
+  .faq .accordions {
+    max-width: 100%;
+  }
+  .footer-left {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer .container {
+    align-items: end;
+  }
+  .footer nav {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .faq .accordions {
+    .desc {
+      font-size: 14px;
+    }
+  }
+  .faq .title {
+    margin-bottom: 30px;
+  }
+  .faq .accordions .accordion-title {
+    font-size: 15px;
+  }
+  .faq .accordions .accordion-header > div .question-icon {
+    min-width: 40px;
+  }
+  .faq .accordions .accordion-header > div {
+    gap: 10px;
+  }
+  .header .nav-list {
+    align-items: center;
+  }
+  .intro-content__title {
+    font-size: 35px;
+  }
+  .intro-content {
+    padding: 50px 0;
+  }
+  .intro-content__desc {
+    font-size: 20px;
+  }
+  .intro-image {
+    width: 90%;
+    img {
+      width: 100%;
+    }
+  }
+  .about-us {
+    padding: 50px 0;
+  }
+  .about-us__content .title {
+    margin-bottom: 30px;
+  }
+  .about-us__img,
+  .about-us__coins-img {
+    width: 80%;
+  }
+  .our-advantages {
+    padding: 50px 0;
+  }
+  .our-advantages__cards {
+    margin-top: 50px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .our-advantages__card {
+    padding: 30px 20px 20px 20px;
+  }
+  .our-advantages__card > div {
+    min-height: 200px;
+  }
+  .our-advantages__cards {
+    grid-template-columns: 1fr;
+  }
+  .calculate-income {
+    padding: 50px 0;
+  }
+  .calculate-income .title-info {
+    margin: 30px 0;
+  }
+  .calculate-income__right-box {
+    padding: 20px;
+  }
+  .calculate-income__boxes .calculate-box {
+    flex-direction: column;
+  }
+  .calculate-income__boxes .calculate-box .left-box {
+    max-width: 100%;
+  }
+  .calculate-income__boxes .calculate-box .statistiks-img {
+    width: fit-content;
+  }
+  .reviews-title__box {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .reviews {
+    padding: 50px 0;
+  }
+  .faq {
+    padding: 50px 0;
+  }
+  .faq-img {
+    height: auto;
+  }
+  .news-cards {
+    grid-template-columns: 1fr;
+  }
+  .news-card .news-title {
+    margin: 20px 0;
+  }
+  .news {
+    padding: 50px 0;
+  }
+  .news-title__box {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    & * {
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      margin: 0 auto;
     }
   }
 }
