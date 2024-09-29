@@ -93,6 +93,8 @@
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     position: relative;
     z-index: 1;
+    background: url(../../images/works-gradient.png) no-repeat;
+    background-position: center;
 
     &::before {
       content: '';
@@ -248,16 +250,28 @@
     box-shadow: 3px 5px 14px 4px rgba(0, 0, 0, 0.07);
   }
 
+  // input[type='range']::-webkit-slider-thumb {
+  //   -webkit-appearance: none;
+  //   appearance: none;
+  //   width: 20px;
+  //   height: 20px;
+  //   border-radius: 50%;
+  //   background-color: #053dfd;
+  //   cursor: pointer;
+  //   z-index: 10;
+  //   position: relative;
+  // }
   input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
-    background-color: #053dfd;
-    cursor: pointer;
     z-index: 10;
     position: relative;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    border: 5px solid #053dfd; /* Oq dumaloq chegarani berish uchun */
   }
   .slider-container {
     z-index: 1;
@@ -276,7 +290,7 @@
     top: 8px;
     height: 10px;
     background-color: #053dfd;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
   }
   &__right-box {
     padding: 30px;
@@ -308,6 +322,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(227px, 1fr));
     gap: 30px;
+    background: url(../../images/works-gradient.png) no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   &-card {
     background: #fff;
@@ -371,6 +388,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background: url(../../images/works-gradient.png) no-repeat;
+    background-position: center;
 
     .accordion {
       background: #fff;
@@ -447,6 +466,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 30px;
+    background: url(../../images/works-gradient.png) no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   &-card {
     background: #fff;

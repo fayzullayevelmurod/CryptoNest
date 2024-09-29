@@ -310,6 +310,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   position: relative;
   z-index: 1;
+  background: url(../../images/works-gradient.png) no-repeat;
+  background-position: center;
 }
 .our-advantages__cards::before {
   content: "";
@@ -465,11 +467,12 @@ body {
   appearance: none;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  background-color: #053dfd;
-  cursor: pointer;
   z-index: 10;
   position: relative;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  border: 5px solid #053dfd; /* Oq dumaloq chegarani berish uchun */
 }
 .calculate-income .slider-container {
   z-index: 1;
@@ -486,7 +489,7 @@ body {
   top: 8px;
   height: 10px;
   background-color: #053dfd;
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
 }
 .calculate-income__right-box {
   padding: 30px;
@@ -516,6 +519,9 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(227px, 1fr));
   gap: 30px;
+  background: url(../../images/works-gradient.png) no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .reviews-card {
   background: #fff;
@@ -577,6 +583,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background: url(../../images/works-gradient.png) no-repeat;
+  background-position: center;
 }
 .faq .accordions .accordion {
   background: #fff;
@@ -643,6 +651,9 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 30px;
+  background: url(../../images/works-gradient.png) no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .news-card {
   background: #fff;
@@ -755,6 +766,8 @@ body {
 
 .works {
   padding: 100px 0 119px 0;
+  background: url(../../images/works-gradient.png) no-repeat;
+  background-position: center;
 }
 .works-boxes {
   margin-top: 75px;
@@ -1105,6 +1118,41 @@ body {
   .news-two {
     margin-bottom: 50px;
   }
+  .simple-staking__page .intro-content h3 {
+    margin: 30px 0;
+  }
+  .works {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .works-boxes {
+    margin-top: 50px;
+    gap: 30px;
+  }
+  .works-box {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .works-info,
+  .simple-staking__page .our-advantages .info-text {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .staking-calculator {
+    padding: 50px 0;
+  }
+  .staking-calculator .title {
+    margin-bottom: 50px;
+  }
+  .staking-calculator .desc {
+    font-size: 20px;
+  }
+  .simple-staking__page .our-advantages .title {
+    text-align: center;
+  }
+  .faq .accordions .accordion-body {
+    gap: 20px;
+  }
 }
 @media screen and (max-width: 480px) {
   .footer * {
@@ -1112,6 +1160,9 @@ body {
     text-align: center;
     justify-content: center;
     margin: 0 auto;
+  }
+  .title {
+    text-align: center;
   }
 }
 

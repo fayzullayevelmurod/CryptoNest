@@ -261,6 +261,45 @@
   .news-two {
     margin-bottom: 50px;
   }
+  .simple-staking__page .intro-content h3 {
+    margin: 30px 0;
+  }
+  .works {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .works-boxes {
+    margin-top: 50px;
+    gap: 30px;
+  }
+  .works-box {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .works-info,
+  .simple-staking__page .our-advantages .info-text {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .staking-calculator {
+    padding: 50px 0;
+  }
+  .staking-calculator .title {
+    margin-bottom: 50px;
+  }
+  .staking-calculator .desc {
+    font-size: 20px;
+  }
+  .simple-staking__page {
+    .our-advantages {
+      .title {
+        text-align: center;
+      }
+    }
+  }
+  .faq .accordions .accordion-body {
+    gap: 20px;
+  }
 }
 @media screen and (max-width: 480px) {
   .footer {
@@ -270,5 +309,8 @@
       justify-content: center;
       margin: 0 auto;
     }
+  }
+  .title {
+    text-align: center;
   }
 }
