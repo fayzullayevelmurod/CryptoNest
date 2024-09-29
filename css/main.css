@@ -64,6 +64,7 @@ body {
   font-weight: 400;
   color: #110a28;
   background: #f6f7ff;
+  margin: 0;
 }
 
 .wrapper {
@@ -113,6 +114,7 @@ body {
   justify-content: center;
   transition: all 0.2s ease-in-out;
   width: fit-content;
+  box-shadow: 2px 3px 12px -4px #023bff;
 }
 .btn-primary:hover {
   background: #002078;
@@ -317,6 +319,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0px 3px 22px -3px rgba(0, 0, 0, 0.07);
 }
 .our-advantages__card img {
   margin: 0 auto 50px auto;
@@ -722,6 +725,97 @@ body {
 }
 .staking-calculator .desc:first-child {
   margin-top: 0;
+}
+
+.works {
+  padding: 100px 0 119px 0;
+}
+.works-boxes {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+.works-box {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+.works-box__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.works-box__desc {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+.works-box__img {
+  min-width: 100px;
+  max-width: 100px;
+}
+.works-info {
+  font-size: 18px;
+  font-weight: 300;
+  color: #77767a;
+  margin-top: 80px;
+}
+.works-info b {
+  color: #110a28;
+}
+
+.news-two {
+  margin-bottom: 100px;
+}
+.news-two .container {
+  background: #fff;
+  padding: 20px 20px 58px 20px;
+  border-radius: 12px;
+  display: flex;
+  gap: 30px;
+  align-items: start;
+  box-shadow: 0px 3px 14px 3px rgba(0, 0, 0, 0.07);
+}
+.news-two .left-box {
+  max-width: 790px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.news-two .left-box .info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.news-two__title {
+  font-size: 36px;
+  font-weight: bold;
+}
+.news-two .lasted-news {
+  background: #f4f5f7;
+  padding: 30px;
+  border-radius: 12px;
+}
+.news-two .lasted-news__info-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 34px;
+}
+.news-two .lasted-news__boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.news-two .lasted-news__date {
+  font-weight: 300;
+  font-size: 14px;
+  color: #b6b5b9;
+}
+.news-two .lasted-news__title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

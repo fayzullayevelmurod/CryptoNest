@@ -55,3 +55,44 @@
   }
 }
 // staking-calculator end
+
+// works start
+.works {
+  padding: 100px 0 119px 0;
+
+  &-boxes {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+  }
+  &-box {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    &__desc {
+      font-size: 20px;
+      font-weight: 300;
+      margin-top: 30px;
+    }
+    &__img {
+      min-width: 100px;
+      max-width: 100px;
+    }
+  }
+  &-info {
+    font-size: 18px;
+    font-weight: 300;
+    color: #77767a;
+    margin-top: 80px;
+    b {
+      color: #110a28;
+    }
+  }
+}
+// works end
