@@ -58,4 +58,40 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // enter amount script
+  const input = document.querySelector('.enter-amount');
+
+  function formatCurrency(value) {
+    let numberString = value.replace(/[^0-9]/g, '');
+
+    if (!numberString) return '';
+
+    let formatted = Number(numberString).toLocaleString('uz-UZ');
+
+    return formatted + ' $';
+  }
+
+  input.addEventListener('input', function (e) {
+    const selectionStart = e.target.selectionStart;
+
+    const formattedValue = formatCurrency(e.target.value);
+
+    e.target.value = formattedValue;
+
+    const newCursorPosition = selectionStart + (e.target.value.length - formattedValue.length);
+    e.target.setSelectionRange(newCursorPosition, newCursorPosition);
+  });
+
+  input.addEventListener('focus', function (e) {
+    if (!e.target.value) {
+      e.target.value = '';
+    }
+  });
+
+  input.addEventListener('blur', function (e) {
+    if (!e.target.value) {
+      e.target.value = '';
+    }
+  });
 })

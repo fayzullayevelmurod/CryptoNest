@@ -377,6 +377,29 @@ body {
   font-size: 20px;
   color: #77767a;
 }
+.calculate-income input[type=number]::-webkit-inner-spin-button,
+.calculate-income input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.calculate-income .price {
+  color: #023bff;
+  font-size: 36px;
+  font-weight: 800;
+}
+.calculate-income .enter-amount {
+  border: none;
+  outline: none;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #110a28;
+}
+.calculate-income .enter-amount::placeholder {
+  color: #110a28;
+}
 .calculate-income__boxes {
   display: flex;
   gap: 30px;
@@ -430,7 +453,8 @@ body {
 }
 .calculate-income__boxes .calculate-box .statistiks-img {
   width: 100%;
-  height: 115px;
+  height: 70px;
+  margin-top: 20px;
 }
 .calculate-income__boxes .calculate-box .dedline-box {
   display: flex;
@@ -550,6 +574,7 @@ body {
 .reviews-card .user-box .user-name {
   font-weight: 20px;
   font-weight: 500;
+  color: #110a28;
 }
 .reviews-card .desc {
   padding: 30px 0 34px 0;
@@ -856,6 +881,11 @@ body {
   font-size: 18px;
   font-weight: 400;
   margin-top: 20px;
+  color: #110a28;
+  transition: all 0.2s ease-in-out;
+}
+.news-two .lasted-news__title:hover {
+  color: #023bff;
 }
 
 @media screen and (max-width: 1250px) {
@@ -1060,9 +1090,6 @@ body {
   }
   .calculate-income__boxes .calculate-box .left-box {
     max-width: 100%;
-  }
-  .calculate-income__boxes .calculate-box .statistiks-img {
-    width: fit-content;
   }
   .reviews-title__box {
     justify-content: center;

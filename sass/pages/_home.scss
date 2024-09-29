@@ -162,6 +162,30 @@
     font-size: 20px;
     color: #77767a;
   }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+  .price {
+    color: #023bff;
+    font-size: 36px;
+    font-weight: 800;
+  }
+  .enter-amount {
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #110a28;
+
+    &::placeholder {
+      color: #110a28;
+    }
+  }
   &__boxes {
     display: flex;
     gap: 30px;
@@ -214,7 +238,8 @@
       }
       .statistiks-img {
         width: 100%;
-        height: 115px;
+        height: 70px;
+        margin-top: 20px;
       }
       .dedline-box {
         display: flex;
@@ -351,6 +376,7 @@
       .user-name {
         font-weight: 20px;
         font-weight: 500;
+        color: #110a28;
       }
     }
     .desc {

@@ -51,6 +51,12 @@
       font-size: 18px;
       font-weight: 400;
       margin-top: 20px;
+      color: #110a28;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: #023bff;
+      }
     }
   }
 }
