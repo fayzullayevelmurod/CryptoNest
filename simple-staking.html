@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- swiper css -->
+  <link rel="stylesheet" href="libs/swiper/swiper.min.css">
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./libs/normalize.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper simple-staking__page">
+
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <a class="header-logo" href="#!">
+          <img src="images/icons/logo.png" alt="logo">
+          <span class="header-logo__name">CryptoNest</span>
+        </a>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#!">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Staking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Lending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="btn-primary" href="#!">Connect wallet</a>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+
+      <!-- intro start -->
+      <section class="intro">
+        <div class="container">
+          <div class="intro-content">
+            <h1 class="intro-content__title">Staking and lending
+              made simple</h1>
+            <h3>
+              Welcome to CryptoNest—your easy path to
+              staking and lending!
+            </h3>
+            <p class="intro-content__info">
+              Here you will learn how to easily stake your cryptocurrencies
+              and earn passive income. Staking is the process of "freezing"
+              your coins in the network to support its operation
+              and receive rewards in return.
+            </p>
+          </div>
+          <div class="intro-image">
+            <img src="images/staking-img.png" alt="staking-img">
+          </div>
+        </div>
+      </section>
+      <!-- intro end -->
+
+      <!-- Calculate income start -->
+      <section class="calculate-income">
+        <div class="container">
+          <h2 class="title">Calculate <span>income</span></h2>
+          <p class="title-info">
+            Contribute to the security of the network and earn rewards.
+          </p>
+          <div class="calculate-income__boxes">
+            <div class="calculate-box">
+              <div class="left-box">
+                <div class="card">
+                  <div>
+                    <span>Cryptocurrency</span>
+                    <h4>Solana</h4>
+                  </div>
+                  <img src="images/icons/arrow-down.png" alt="arrow-down">
+                </div>
+                <img class="statistiks-img" src="images/statistiks.png" alt="">
+              </div>
+              <div class="right-box">
+                <div class="card">
+                  <div>
+                    <span>Enter the amount</span>
+                    <h4>10.000 $</h4>
+                  </div>
+                </div>
+                <div class="dedline-box">
+                  <h5>Investment term</h5>
+                  <span class="dedline-count">1 year</span>
+                </div>
+                <div class="slider-container">
+                  <input type="range" id="slider" min="0" max="1000" value="693">
+                  <div class="track" id="track"></div>
+                </div>
+                <div class="card">
+                  <div>
+                    <span>Income after 1 year</span>
+                    <h4 style="display: flex; gap: 4px;">
+                      <div id="income">693.23</div> $
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculate-income__right-box">
+              <h3>What is Solana Staking?</h3>
+              <p class="desc">
+                Solana Staking involves delegating SOL tokens to a chosen validator while maintaining full control over
+                your keys.
+              </p>
+              <p class="desc">
+                Validators use these tokens as collateral to secure and validate the Solana blockchain, distributing
+                rewards to you every epoch (about 2 days). The current staking reward rate on Solana is 6.93%.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- Calculate income end -->
+
+      <!-- Staking calculator start -->
+      <div class="staking-calculator">
+        <div class="container">
+          <h2 class="title">Staking calculator</h2>
+          <p class="desc">
+            Want to find out how much you can earn from staking? Use our Staking Calculator at the top of this page to
+            calculate your potential income.
+          </p>
+          <p class="desc">
+            Our calculator includes the top 10 PoS coins by market capitalization, allowing you to estimate the annual
+            percentage yield (APY) they may provide. Simply enter the number of coins you want to stake and select one
+            of these coins to see the rewards you can expect.
+          </p>
+          <p class="desc">
+            Don’t forget to consider pool fees and withdrawal timelines, as they can affect your final profit.
+          </p>
+        </div>
+      </div>
+      <!-- Staking calculator end -->
+
+      <!-- Our advantages start -->
+      <section class="our-advantages">
+        <div class="container">
+          <h2 class="title">Why should you stake with us?</h2>
+
+          <div class="our-advantages__cards">
+            <div class="our-advantages__card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+              <img src="images/card-img-1.png" alt="security" width="188" height="188">
+              <div>
+                <h3 class="our-advantages__card-title">Ease of use</h3>
+                <p class="desc">
+                  Our intuitive interface <br>
+                  makes it easy to connect <br>
+                  your wallet and start staking.
+                </p>
+              </div>
+            </div>
+            <div class="our-advantages__card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+              <img src="images/card-img-2.png" alt="up-finance" width="157" height="166">
+              <div>
+                <h3 class="our-advantages__card-title">High rewards</h3>
+                <p class="desc">
+                  We offer access <br>
+                  to the best staking pools <br>
+                  with attractive terms.
+                </p>
+              </div>
+            </div>
+            <div class="our-advantages__card" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+              <img src="images/card-img-3.png" alt="convertation" width="217" height="153">
+              <div>
+                <h3 class="our-advantages__card-title">Security <br>
+                  and transparency</h3>
+                <p class="desc">
+                  Your assets remain <br>
+                  under your ownership, <br>
+                  and all processes are <br>
+                  completely transparent.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="info-text">Start staking today and make your cryptocurrencies work for you!</p>
+        </div>
+      </section>
+      <!-- Our advantages end -->
+
+    </main>
+
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-left">
+          <div>
+            <h4>CryptoNest, 2024.</h4>
+            <span class="footer-text">All rights reserved</span>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a class="footer-text" href="mailto:info@cryptonest.ru">
+                  <img src="images/icons/at-icon.png" alt="at icon">
+                  <span>info@cryptonest.ru</span>
+                </a>
+              </li>
+              <li>
+                <a class="footer-text" href="mailto:info@cryptonest.ru">
+                  <img src="images/icons/location-icon.png" alt="location icon">
+                  <span>Moscow, st. Marshal, 10, building 2</span>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#!">User agreement</a>
+              </li>
+              <li>
+                <a href="#!">Terms of service</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-right">
+          <a href="#!">
+            <img src="images/icons/vk-icon.png" alt="vk-icon">
+          </a>
+          <a href="#!">
+            <img src="images/icons/facebook-icon.png" alt="facebook-icon">
+          </a>
+          <a href="#!">
+            <img src="images/icons/twitter-icon.png" alt="twitter-icon">
+          </a>
+          <a href="#!">
+            <img src="images/icons/instagram-icon.png" alt="instagram-icon">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- vanilla-tilt js -->
+  <script src="./js/vanilla-tilt.js"></script>
+  <!-- custom js -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

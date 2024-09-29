@@ -1,0 +1,57 @@
+.simple-staking__page {
+  .intro {
+    &-content {
+      max-width: 585px;
+
+      h3 {
+        margin: 60px 0 30px 0;
+        font-weight: 500;
+        font-size: 24px;
+      }
+      &__info {
+        font-size: 20px;
+        font-weight: normal;
+        color: #77767a;
+      }
+    }
+    &-img {
+      max-width: 526px;
+      height: 360px;
+      top: 54%;
+    }
+  }
+  .our-advantages__card > div {
+    min-height: 188px;
+  }
+  .our-advantages__cards::before {
+    background: #c4f5ec;
+  }
+  .our-advantages__cards::after {
+    background: #c8ebfb;
+  }
+  .our-advantages {
+    .info-text {
+      font-size: 20px;
+      color: #77767a;
+      margin-top: 70px;
+    }
+  }
+}
+
+// staking-calculator start
+.staking-calculator {
+  padding: 113px 0;
+  background: #fff;
+  .title {
+    margin-bottom: 60px;
+  }
+  .desc {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #110a28;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+// staking-calculator end

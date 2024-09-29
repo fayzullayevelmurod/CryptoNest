@@ -1,0 +1,32 @@
+.news-page {
+  .news {
+    padding-top: 0;
+
+    &-title__box {
+      margin-bottom: 60px;
+    }
+  }
+  .paginations {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 60px;
+
+    button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #fff;
+      cursor: pointer;
+      color: #212121;
+      font-size: 16px;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0px 3px 14px 3px rgba(0, 0, 0, 0.07);
+      &:hover,
+      &.active {
+        background: #023bff;
+        color: #fff;
+      }
+    }
+  }
+}

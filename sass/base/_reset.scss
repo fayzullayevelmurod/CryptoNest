@@ -74,3 +74,14 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.breadcrumbs {
+  display: flex;
+  gap: 4px;
+  margin: 30px 0 40px 0;
+  a {
+    color: #b6b5b9;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}

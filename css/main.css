@@ -75,9 +75,23 @@ body {
   margin: 0 auto;
 }
 
+.breadcrumbs {
+  display: flex;
+  gap: 4px;
+  margin: 30px 0 40px 0;
+}
+.breadcrumbs a {
+  color: #b6b5b9;
+  font-weight: 300;
+  font-size: 14px;
+}
+
 .title {
   font-size: 48px;
   font-weight: bold;
+}
+.title span {
+  color: #023bff;
 }
 
 .desc {
@@ -191,6 +205,10 @@ body {
     transform: translateY(-60%);
   }
 }
+.home-page header {
+  border: none !important;
+}
+
 .intro .container {
   display: flex;
   align-items: center;
@@ -599,7 +617,7 @@ body {
 }
 .news-card {
   background: #fff;
-  box-shadow: 3px 5px 14px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0px 33px 3px rgba(0, 0, 0, 0.07);
   overflow: hidden;
   border-radius: 12px;
   padding: 20px;
@@ -627,6 +645,83 @@ body {
   background: #023bff;
   color: #fff;
   border-radius: 8px;
+}
+
+.news-page .news {
+  padding-top: 0;
+}
+.news-page .news-title__box {
+  margin-bottom: 60px;
+}
+.news-page .paginations {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 60px;
+}
+.news-page .paginations button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  color: #212121;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 3px 14px 3px rgba(0, 0, 0, 0.07);
+}
+.news-page .paginations button:hover, .news-page .paginations button.active {
+  background: #023bff;
+  color: #fff;
+}
+
+.simple-staking__page .intro-content {
+  max-width: 585px;
+}
+.simple-staking__page .intro-content h3 {
+  margin: 60px 0 30px 0;
+  font-weight: 500;
+  font-size: 24px;
+}
+.simple-staking__page .intro-content__info {
+  font-size: 20px;
+  font-weight: normal;
+  color: #77767a;
+}
+.simple-staking__page .intro-img {
+  max-width: 526px;
+  height: 360px;
+  top: 54%;
+}
+.simple-staking__page .our-advantages__card > div {
+  min-height: 188px;
+}
+.simple-staking__page .our-advantages__cards::before {
+  background: #c4f5ec;
+}
+.simple-staking__page .our-advantages__cards::after {
+  background: #c8ebfb;
+}
+.simple-staking__page .our-advantages .info-text {
+  font-size: 20px;
+  color: #77767a;
+  margin-top: 70px;
+}
+
+.staking-calculator {
+  padding: 113px 0;
+  background: #fff;
+}
+.staking-calculator .title {
+  margin-bottom: 60px;
+}
+.staking-calculator .desc {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #110a28;
+}
+.staking-calculator .desc:first-child {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
