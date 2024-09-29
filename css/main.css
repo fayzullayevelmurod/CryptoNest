@@ -155,7 +155,7 @@ body {
   display: none;
 }
 .header .hamburger-btn {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 5px;
 }
@@ -855,7 +855,7 @@ body {
     max-width: 600px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1065px) {
   .header {
     padding: 20px 0;
   }
@@ -863,6 +863,9 @@ body {
     display: none;
   }
   .header .btn-primary.media-show {
+    display: flex;
+  }
+  .header .hamburger-btn {
     display: flex;
   }
   .header nav {
@@ -882,6 +885,8 @@ body {
   .header nav ul {
     flex-direction: column;
   }
+}
+@media screen and (max-width: 1024px) {
   .intro-image {
     position: unset;
     transform: none;
@@ -1096,6 +1101,9 @@ body {
   }
   .news-two .container {
     padding: 20px;
+  }
+  .news-two {
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 480px) {

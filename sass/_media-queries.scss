@@ -8,8 +8,7 @@
     max-width: 600px;
   }
 }
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1065px) {
   .header {
     padding: 20px 0;
     .btn-primary {
@@ -17,6 +16,9 @@
       &.media-show {
         display: flex;
       }
+    }
+    .hamburger-btn {
+      display: flex;
     }
     nav {
       position: fixed;
@@ -36,6 +38,8 @@
       }
     }
   }
+}
+@media screen and (max-width: 1024px) {
   .intro-image {
     position: unset;
     transform: none;
@@ -253,6 +257,9 @@
   }
   .news-two .container {
     padding: 20px;
+  }
+  .news-two {
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 480px) {
